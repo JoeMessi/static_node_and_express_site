@@ -32,6 +32,18 @@ app.get('/project-:id', (req, res) => {
 
 
 
+// error handler middlewares
+app.use((req, res, next) => {
+  const err = new Error('whoops! Page Not found');
+  err.status = 404;
+  next(err);
+})
+
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error.pug');
+})
 
 
 
