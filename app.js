@@ -10,17 +10,17 @@ app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
 
-// home page route
+// 'home' page route
 app.get('/', (req, res) => {
   res.render('index.pug', {projects: data.projects});
 });
 
-// about page route
+// 'about' page route
 app.get('/about', (req, res) => {
   res.render('about.pug');
 })
 
-// projects page route ( dynamic )
+// 'projects' page route ( dynamic )
 app.get('/project-:id', (req, res) => {
   // project id given in the url
   const { id } = req.params;
@@ -29,8 +29,6 @@ app.get('/project-:id', (req, res) => {
 
   res.render('project.pug', { project });
 })
-
-
 
 // error handler middlewares
 app.use((req, res, next) => {
@@ -46,13 +44,6 @@ app.use((err, req, res, next) => {
     res.status(err.status);
     res.render('error.pug');
 })
-
-
-
-
-
-
-
 
 // local server set up, port number 3000
 app.listen(3000, () => {

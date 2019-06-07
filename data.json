@@ -3,7 +3,7 @@
     {
       "id":0,
       "project_name":"a random quote generator",
-      "description":"A webpage that displays a famous random quote",
+      "description":"A webpage that displays a famous random quote.",
       "technologies":["HTML","CSS","JavaScript"],
       "live_link":"https://joemessi.github.io/a_random_quote_generator/",
       "github_link":"https://github.com/JoeMessi/a_random_quote_generator",
