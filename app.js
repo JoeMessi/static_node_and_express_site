@@ -9,7 +9,6 @@ app.set('view engine', 'pug');
 // serving static files inside public folder
 app.use('/static', express.static('public'));
 
-
 // 'home' page route
 app.get('/', (req, res) => {
   res.render('index.pug', {projects: data.projects});
@@ -20,13 +19,12 @@ app.get('/about', (req, res) => {
   res.render('about.pug');
 })
 
-// 'projects' page route ( dynamic )
+// 'projects' page route ( dynamic depending on the project id )
 app.get('/project-:id', (req, res) => {
   // project id given in the url
   const { id } = req.params;
   // specific project data given an id
   const project = data.projects[id];
-
   res.render('project.pug', { project });
 })
 
@@ -38,7 +36,6 @@ app.use((req, res, next) => {
   console.log(`${err} - status code of: ${err.status}`)
   next(err);
 })
-
 app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
