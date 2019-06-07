@@ -7,7 +7,10 @@
       "technologies":["HTML","CSS","JavaScript"],
       "live_link":"https://joemessi.github.io/a_random_quote_generator/",
       "github_link":"https://github.com/JoeMessi/a_random_quote_generator",
-      "image_urls":["","",""]
+      "image_urls":["/static/images/a_random_quote_generator_main.png",
+                    "/static/images/a_random_quote_generator_1.png",
+                    "/static/images/a_random_quote_generator_2.png",
+                    "/static/images/a_random_quote_generator_3.png"]
     },
     {
       "id":1,
@@ -16,7 +19,10 @@
       "technologies":["HTML","CSS","JavaScript"],
       "live_link":"https://joemessi.github.io/list_pagination_and_filtering/",
       "github_link":"https://github.com/JoeMessi/list_pagination_and_filtering",
-      "image_urls":["","",""]
+      "image_urls":["/static/images/list_pagination_and_filtering_main.png",
+                    "/static/images/list_pagination_and_filtering_1.png",
+                    "/static/images/list_pagination_and_filtering_2.png",
+                    "/static/images/list_pagination_and_filtering_3.png"]
     },
     {
       "id":2,
@@ -25,7 +31,10 @@
       "technologies":["HTML","CSS","JavaScript","jQuery"],
       "live_link":"https://joemessi.github.io/interactive-form/",
       "github_link":"https://github.com/JoeMessi/interactive-form",
-      "image_urls":["","",""]
+      "image_urls":["/static/images/interactive_form_main.png",
+                    "/static/images/interactive_form_1.png",
+                    "/static/images/interactive_form_2.png",
+                    "/static/images/interactive_form_3.png"]
     },
     {
       "id":3,
@@ -34,7 +43,10 @@
       "technologies":["HTML","CSS","JavaScript","OOP"],
       "live_link":"https://joemessi.github.io/oop_game/",
       "github_link":"https://github.com/JoeMessi/oop_game",
-      "image_urls":["","",""]
+      "image_urls":["/static/images/oop_game_main.png",
+                    "/static/images/oop_game_1.png",
+                    "/static/images/oop_game_2.png",
+                    "/static/images/oop_game_3.png"]
     },
     {
       "id":4,
@@ -43,7 +55,10 @@
       "technologies":["HTML","CSS","JavaScript","AJAX"],
       "live_link":"https://joemessi.github.io/public_api_request/",
       "github_link":"https://github.com/JoeMessi/public_api_request",
-      "image_urls":["","",""]
+      "image_urls":["/static/images/public_api_request_main.png",
+                    "/static/images/public_api_request_1.png",
+                    "/static/images/public_api_request_2.png",
+                    "/static/images/public_api_request_3.png"]
     }
   ]
 }

@@ -1,13 +1,12 @@
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
+    -webkit-text-transform: capitalize;
+    text-transform: capitalize;
   }
 
   h6{
@@ -103,7 +102,7 @@ a:hover{
 }
 
 .portfolio-intro p{
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #cacaca;
   padding-bottom: 40px;
 }
 
@@ -121,11 +120,13 @@ a:hover{
   }
 
   .portfolio-index .cell{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
     .portfolio-index .cell h5{
       letter-spacing: 1px;
+      text-align: center;
+      color: #666;
     }
 
 .portfolio-meta{
@@ -147,4 +148,49 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+/* my style  */
+
+.shrink .thumbnail {
+  border: none;
+  box-shadow: none;
+}
+
+/* a .thumbnail {
+
+    border: none;
+    box-shadow: none;
+
+    transition: .6s ease;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px #0000007d;
+}
+
+a .thumbnail:hover {
+    opacity: 0.7;
+    box-shadow: 0px 0px 6px #000000d6;
+} */
+
+.cell a .thumbnail {
+  border: none;
+  box-shadow: none;
+  transition: .6s ease;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px #0000007d;
+}
+.cell:hover a .thumbnail {
+  opacity: 0.6;
+  box-shadow: 0px 0px 6px #000000d6;
+}
+.cell a h5 {
+  transition: .6s ease;
+}
+.cell:hover a h5 {
+  color: #3c3b3b;
+  font-size: 1.4rem;
+}
+
+body {
+  background-color: #e8e8e873;
 }
