@@ -20,12 +20,23 @@ app.get('/about', (req, res) => {
 })
 
 // 'projects' page route ( dynamic depending on the project id )
-app.get('/project-:id', (req, res) => {
+app.get('/project-:id', (req, res, next) => {
   // project id given in the url
   const { id } = req.params;
   // specific project data given an id
   const project = data.projects[id];
-  res.render('project.pug', { project });
+
+  // if valid project and id, render the project page
+  if(project) {
+    res.render('project.pug', { project });
+
+  }else{ // else throw an error
+
+    const err = new Error('whoops! Page Not found');
+    err.status = 404;
+    console.log(`${err} - status code of: ${err.status}`)
+    next(err);
+  }
 })
 
 // error handler middlewares
